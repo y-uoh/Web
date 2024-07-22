@@ -90,5 +90,5 @@
 </html>
 ```  
   
-[サンプルページ](C:\Users\udb19\OneDrive\デスクトップ\00_knowledge Book\10_web技術\Web\01_HTML\Talble_Sample.html)
+[サンプルページ](Talble_Sample.html)
 
