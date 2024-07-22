@@ -11,10 +11,10 @@
 | `<li>`タグ | リスト項目 | [`<li>`タグ詳細 -MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element/li) |  |
 | `<a>`タグ | アンカー要素：ハイパーリンクの作成 | [`<a>`タグ詳細 -MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) |  |  
 | `<img>`タグ | 画像埋め込み要素：文書に画像を埋め込む | [`<img>`タグ詳細 -MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element/img) | 空要素 |  
-| `<hr>`タグ | 水平線要素 | [`<>`タグ詳細 -MDN]() |  |  
-| `<br>`タグ | 改行要素 | [`<>`タグ詳細 -MDN]() |  |  
-| `<sup>`タグ | 上付き文字要素。指数や添え字を表現 | [`<>`タグ詳細 -MDN]() |  |  
-| `<sub>`タグ | 下付き文字要素 | [`<>`タグ詳細 -MDN]() |  |  
+| `<hr>`タグ | 水平線要素 | [`<hr>`タグ詳細 -MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element/hr) |  |  
+| `<br>`タグ | 改行要素 | [`<br>`タグ詳細 -MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element/br) |  |  
+| `<sup>`タグ | 上付き文字要素。指数や添え字を表現 | [`<sup>`タグ詳細 -MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element/sup) |  |  
+| `<sub>`タグ | 下付き文字要素 | [`<sub>`タグ詳細 -MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element/sub) |  |  
 | `<>`タグ |  | [`<>`タグ詳細 -MDN]() |  |  
 | `<>`タグ |  | [`<>`タグ詳細 -MDN]() |  |  
 | `<>`タグ |  | [`<>`タグ詳細 -MDN]() |  |  
@@ -90,5 +90,5 @@
 </html>
 ```  
   
-[サンプルページ](Talble_Sample.html)
+[サンプルページ](C:\Users\udb19\OneDrive\デスクトップ\00_knowledge Book\10_web技術\Web\01_HTML\Talble_Sample.html)
 
