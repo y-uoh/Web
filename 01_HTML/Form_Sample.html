@@ -9,30 +9,67 @@
 
 <body>
     <h1>Form Sample</h1>
-    <form action=""></form>
-    <p>
-        <label for="username">ユーザー名：</label>
-        <input id="username" type="text" placeholder="ユーザ名">
-    </p>
-    <p>
-        <label for="password">パスワード：</label>
-        <input id="password" type="password" placeholder="パスワード">
-    </p>
-    <p>
-        <label for="color">好きな色：</label>
-        <input id="color" type="color">
-    </p>
-    <p>
-        <label for="month">月を指定：</label>
-        <input id="month" type="month">
-    </p>
-    <p>
-        <label>好きな数値：
-            <input type="number" placeholder="数値を入力">
-        </label>
+    <form action="/">
+        <p>
+            <label for="username">ユーザー名：</label>
+            <input id="username" type="text" placeholder="ユーザ名" name="username">
+        </p>
+        <p>
+            <label for="password">パスワード：</label>
+            <input id="password" type="password" placeholder="パスワード" name="password">
+        </p>
+        <p>
+            <label for="color">好きな色：</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label>好きな数値：
+                <input type="number" placeholder="数値を入力" name="num">
+            </label>
+        </p>
+        <button type="submit">送　信</button>
+        <input type="submit" value="送　信">
+    </form>
 
-    </p>
+    <hr>
 
+    <h2>ハイジャック検索</h2>
+    <h3>google検索</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button type="submit">google検索</button>
+    </form>
+    <h3>youtube検索</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>youtube検索</button>
+    </form>
+
+    <h2>その他のファーム要素</h2>
+    <form action="/birds">
+        <p>
+            <input type="checkbox" id="agree_tos" name="agree_tos" >
+            <label for="agree_tos">利用規約に同意します</label>
+        </p>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <label for="meal">食事を選択してください</label>
+        <select name="meal" id="meal">
+            <option value="fish">焼き魚</option>
+            <option value="salad">サラダ</option>
+            <option value="steak" selected>ステーキ</option>
+        </select>
+        <p>
+
+        </p>
+        <button>送信</button>
+    </form>
 </body>
 
 </html>
