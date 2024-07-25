@@ -9,8 +9,11 @@
 
 <body>
     <h1>Form Sample</h1>
-    <form action="/">
+    <!-- formタグで囲まれた部分が1つのブロックとされるので、このブロックにあるフォームの入力値全部が一度に送信されるデータとなる -->
+    <!-- formのaction属性の属性値がデータの送信先となる -->
+    <form action="/test">
         <p>
+            <!-- labelのfor属性値とinputのid属性値を同じにすることで、ひとつのフォームを構成できる -->
             <label for="username">ユーザー名：</label>
             <input id="username" type="text" placeholder="ユーザ名" name="username">
         </p>
@@ -34,6 +37,7 @@
     <hr>
 
     <h2>ハイジャック検索</h2>
+    <!-- formのactionにgoogleやyoutubeなど検索結果先のURLを設定し、入力値を受け付けるname属性の属性値をいれることで、簡易的な検索フォームを実装できる -->
     <h3>google検索</h3>
     <form action="https://www.google.com/search">
         <input type="text" name="q">
@@ -45,13 +49,16 @@
         <button>youtube検索</button>
     </form>
 
-    <h2>その他のファーム要素</h2>
+    <h2>その他のinput要素の属性や型</h2>
     <form action="/birds">
         <p>
-            <input type="checkbox" id="agree_tos" name="agree_tos" >
+            <!-- checkboxはfor属性とid属性を合わせ関連付けてるのがベストプラクティス -->
+            <input type="checkbox" id="agree_tos" name="agree_tos">
             <label for="agree_tos">利用規約に同意します</label>
         </p>
         <p>
+            <!-- 【重要】ラジオボタンは、name属性値を同じにすることで、ひとつのグループとすることができる -->
+            <!-- 【重要】ラジオボタンで送信する値は、valueの属性値を送信するので、value属性は必須 -->
             <label for="xs">XS:</label>
             <input type="radio" name="size" id="xs" value="xs">
             <label for="s">S:</label>
@@ -59,16 +66,54 @@
             <label for="m">M:</label>
             <input type="radio" name="size" id="m" value="m">
         </p>
-        <label for="meal">食事を選択してください</label>
-        <select name="meal" id="meal">
-            <option value="fish">焼き魚</option>
-            <option value="salad">サラダ</option>
-            <option value="steak" selected>ステーキ</option>
-        </select>
         <p>
-
+            <!-- select要素はドロップダウンリストを作成する -->
+            <!-- ドロップダウンとなる各リストはoption要素で指定し、送信される値はvalue属性の属性値が送信されるので、valueは必須 -->
+            <label for="meal">食事を選択してください</label>
+            <select name="meal" id="meal">
+                <option value="fish">焼き魚</option>
+                <option value="salad">サラダ</option>
+                <option value="steak" selected>ステーキ</option> <!-- selected属性は、ドロップダウンの初期値の指定 -->
+            </select>
         </p>
         <button>送信</button>
+        </p>
+    </form>
+
+    <h2>バリデーションテスト</h2>
+    <!-- required属性 -->
+    <!-- input要素にrequired属性を設定すると、入力必須フォームにすることができる -->
+    <form action="/red">
+        <p>
+            <label for="first">ユーザ名：</label>
+            <input type="text" name="first" id="first" placeholder="ユーザ名" required> <!-- required属性は値無しでOK -->
+        </p>
+
+        <!-- minlength属性/maxlength属性 -->
+        <!-- minlength属性/maxlengthの属性値は、入力値以上及び入力値以下という設定になる。※ここでは5文字以上20以下に設定 -->
+        <p>
+            <label for="pass">パスワード：</label>
+            <input type="password" name="pass" id="pass" placeholder="パスワード" minlength="5" maxlength="20" required>
+        </p>
+
+        <!-- input要素のtype属性値によるバリデーション -->
+        <!-- emailタイプ -->
+        <!-- emailタイプは、@の前後に文字列ないと入力を受け付けなくなる -->
+        <p>
+            <label for="email">メールアドレス：</label>
+            <input type="email" name="email" id="email" placeholder="メールアドレス" required>
+        </p>
+
+        <!-- urlタイプ -->
+        <!-- urlタイプは、入力値にhttpなどURL形式の文字列がないと入力を受け付けない -->
+        <p>
+            <label for="url">URL：</label>
+            <input type="url" name="url" id="url" placeholder="URL" required>
+        </p>
+
+        <p>
+            <button type="submit">送　信</button>
+        </p>
     </form>
 </body>
 
