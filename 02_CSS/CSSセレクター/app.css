@@ -1,0 +1,61 @@
+/* ユニバーサルセレクター：全ての要素を対象にする */
+/* * {
+    color: pink;
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    background-color: #2a9d8f;
+    font-size: 30px;
+}
+
+h1,
+h2 {
+    color: #1d3557;
+}
+
+#signup {
+    color: #edede9;
+    background-color: #1d3557;
+}
+
+span {
+    color: #e9c46a;
+}
+
+.tag {
+    background-color: #f4a261;
+    color: #edede9;
+}
+
+.post a {
+    color: #edede9
+}
+
+footer a {
+    color: red;
+}
+
+h2+button {
+    font-size: 10px;
+}
+
+footer>a {
+    color: #1d3557;
+}
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+span[class="tab"]{
+    background-color: red;
+}
+
+a[href*="google"]{
+    color: black;
+}
