@@ -1,0 +1,23 @@
+h1 {
+    /* text-align：テキストの配置位置を水平方向で指定 */
+    text-align: center;
+    /* font-weight：文字の太さの指定 */
+    font-weight: normal;
+    /* text-decoration：テキストの装飾的な線の指定 */
+    text-decoration: underline #25c4ff wavy;
+    /* letter-spacing：文字と文字の間の間隔を指定 */
+    letter-spacing: 30px;
+    /* font-size：文字サイズの設定 */
+    font-size: 50px;
+    /* font-family：フォントの指定。複数指定すること、総称ファミリー名での指定が可能 */
+    font-family: Sans-serif, Serif, monospace;
+}
+
+a {
+    /* a要素のデフォルト下線を消す */
+    text-decoration: none;
+}
+p{
+    /* line-height：行の高さを指定 */
+    line-height: 2;
+}

@@ -1,0 +1,18 @@
+h1{
+    /* カラーネームによる指定 */
+    color: teal;
+    /* RGBによる指定 */
+    background-color: rgb(108, 175, 0);
+}
+
+button{
+    /* 16進数/HEXによる指定 */
+    color: #6C01B5;
+    /* 16進数/HEXによる指定の省略記法 -> 以下の設定値は#aa44ddと同じである */
+    background-color: #A4B;
+}
+
+p{
+    color: white;
+    background: hsl(0, 0%, 0%);
+}

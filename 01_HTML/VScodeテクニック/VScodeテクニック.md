@@ -28,3 +28,13 @@
 ```  
 - Emmet構文を数が多くあるので、便利に使うにはリファレンスを確認しながらやるとよい
 [Emmetチートシート](https://docs.emmet.io/cheat-sheet/)  
+  
+## inputタイプの補完
+- `input:<タイプ名>`とするとそのタイプで`inputタグ`を補完してくれる
+```html
+input:radio
+
+↓Tab補完
+
+<input type="radio" name="" id="></input>
+```
