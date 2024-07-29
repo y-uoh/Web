@@ -33,7 +33,9 @@ span {
 }
 
 .post a {
-    color: #edede9
+    color: #edede9;
+    text-decoration: none;
+    font-weight: 700px;
 }
 
 footer a {
@@ -58,4 +60,29 @@ span[class="tab"]{
 
 a[href*="google"]{
     color: black;
+}
+
+.post button:hover{
+    background-color: red;
+    color: white;
+}
+
+.post a:hover{
+    text-decoration: underline;
+}
+
+.post button:active{
+    background-color: aqua;
+}
+
+h2::first-letter{
+    font-size: 50px;
+}
+
+p::first-line{
+    color: purple
+}
+
+p::selection{
+    background-color: chartreuse;
 }
