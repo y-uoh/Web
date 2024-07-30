@@ -1,9 +1,32 @@
-div{
+div {
     width: 200px;
     height: 300px;
     background-color: rgb(245, 237, 201);
 }
 
-h1{
+h1 {
     background-color: antiquewhite;
+
+}
+
+#one {
+    background-color: #0077b6;
+    border-width: 5px;
+    border-color: #2a9d8f;
+    border-style: solid;
+    /* box-sizing: border-box; */
+}
+
+#two {
+    background-color: #00b4d8;
+    border-width: 3px;
+    border-color: #fb5607;
+    border-style: dashed;
+    border-left-width: 8px;
+}
+
+#three {
+    background-color: #90e0ef;
+    border: 4px solid black;
+    border-radius: 10px;
 }
